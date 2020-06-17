@@ -1,12 +1,16 @@
 package com.eduardorib.api.exceptionhandler;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
+@JsonInclude(Include.NON_NULL)
 public class Problema {
 
 	private Integer status;
-	private LocalDate dataHora;
+	private LocalDateTime dataHora;
 	private String titulo;
 	private List<Campo> campos;
 
@@ -47,11 +51,11 @@ public class Problema {
 		this.status = status;
 	}
 
-	public LocalDate getDataHora() {
+	public LocalDateTime getDataHora() {
 		return dataHora;
 	}
 
-	public void setDataHora(LocalDate time) {
+	public void setDataHora(LocalDateTime time) {
 		this.dataHora = time;
 	}
 
