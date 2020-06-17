@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="378" height="97" src="https://github.com/eduardorcury/curso-spring-rest/blob/master/springlogo.svg">
+</p>
+
 # RESTful API com Spring
 
 > Projeto desenvolvido no curso de Spring REST da Algaworks.
